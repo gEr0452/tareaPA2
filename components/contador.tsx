@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button, StyleSheet, Text, View } from "react-native";
 
-export default function ContadorScreen() {
+export default function Counter() {
   const [count, setCount] = useState(0);
 
   return (
@@ -21,21 +21,8 @@ export default function ContadorScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  text: {
-    fontSize: 22,
-    marginBottom: 20,
-  },
-  buttonContainer: {
-    flexDirection: "row", // pone los botones en fila
-    justifyContent: "space-between",
-  },
-  button: {
-    marginHorizontal: 10, // espacio entre botones
-  },
+  container: { alignItems: "center" },
+  text: { fontSize: 22, marginBottom: 20 },
+  buttonContainer: { flexDirection: "row", justifyContent: "space-between" },
+  button: { marginHorizontal: 10 },
 });
